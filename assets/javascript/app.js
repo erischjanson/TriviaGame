@@ -24,6 +24,42 @@ var questions=[
   }
 ]
 
+for(var i=0; i < questions.length; i++){
+ var questionAnswers = `
+
+    <div id="question${i+1}">
+    
+    <div id="question">${questions[i].question}</div>
+      <fieldset id="possibleAnswers">
+        <label for="answer1">${questions[i].possibleAnswers[0]}</label>
+        <input name="question${i}" checked type="radio" id="answer1"></input>
+        <label for="answer2">${questions[i].possibleAnswers[1]}</label>
+        <input name="question${i}"  type="radio" id="answer2"></input>
+        <label for="answer3">${questions[i].possibleAnswers[2]}</label>
+        <input name="question${i}"  type="radio" id="answer3"></input>
+      </fieldset>
+    </div>`
+
+    $("#questionBox").append(questionAnswers);
+}
+
+/*
+<div id="question1">
+  <div id="question"></div>
+  <fieldset id="possibleAnswers">
+    <label for="answer1">Kevin Arnold</label>
+    <input type="radio" id="answer1"></input>
+    <label for="answer2">Arnold Johnson</label>
+    <input type="radio" id="answer2"></input>
+    <label for="answer2">Kevin Cooper</label>
+    <input type="radio" id="answer2"></input>
+  </fieldset>
+</div>
+
+*/
+
+
+
 var userAnswer
 var incorrectGuesses=0;
 var correctGuesses=0;
