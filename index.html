@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="jumbotron">
+		<h1>The Wonder Years Triva Game</h1>
+	</div>
+
+	<div class="gameContainer"> 
+		<button id="start" type="button" class="btn btn-primary btn-lg pull-right">Start Game</button>
+		<div id="timer"></div>
+
+		<div id="questionBox"></div>
+
+		<div id="scoreboard" class="card" style="width: 20rem;">
+	  		<div class="card-body">
+			    <h4 class="card-title">Scoreboard</h4>
+			    <p id="correctAnswers" class="card-text"></p>
+			    <p id="incorrectAnswers" class="card-text"></p>
+			</div>
+		</div>
+		<div id="scoreboard">
+			<div id="correctAnswers"></div>
+			<div id="incorrectAnswers"></div>
+		</div>
+	</div>
+</div>
+	
+<script type="text/javascript" src="assets/javascript/app.js"></script>	
+</body>
+</html>
